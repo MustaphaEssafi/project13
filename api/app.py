@@ -53,6 +53,7 @@ def login():
 # ---------------------------
 # PING (Secure)
 # ---------------------------
+
 @app.route("/ping", methods=["POST"])
 def ping():
     host = request.json.get("host", "")
